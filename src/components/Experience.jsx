@@ -1,32 +1,43 @@
 import React from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
+export const experiences = [
+    {
+        title: "App Developer Intern",
+        company: "Gramtarang Technologies",
+        location: "Vijayawada",
+        type: "Internship",
+        description: [
+            "Developed an application for the SMO (Sewing Machine Operation) unit.",
+            "Built functionality to monitor workers' tasks and calculate their salaries based on their work output."
+        ]
+    },
+    {
+        title: "Android Application Developer",
+        company: "Bharath Heavy Electricals Limited (BHEL)",
+        date: "05/2024 - 06/2024",
+        location: "India",
+        type: "Manufacturing / Core",
+        description: [
+            "Developed a PIN Code Validator Android Application using Kotlin and Jetpack Compose, integrating real-time validation features.",
+            "Applied modern Android development practices including declarative UI with Jetpack Compose and clean architecture principles.",
+            "Gained exposure to industry workflow, software development lifecycle (SDLC), and project documentation within a large-scale organization."
+        ]
+    },
+    {
+        title: "AIML Internship",
+        company: "Internpe",
+        date: "06/2024",
+        location: "Online",
+        type: "Startup company",
+        description: [
+            "Specialized in training machine learning models and optimizing algorithms to enhance model accuracy, reduce computational cost, and improve overall system performance.",
+            "Experienced in developing and deploying deep learning models using TensorFlow and PyTorch for complex classification and regression tasks, including data preprocessing, model training, evaluation, and optimization."
+        ]
+    }
+];
+
 const Experience = () => {
-    const experiences = [
-        {
-            title: "Android Application Developer",
-            company: "Bharath Heavy Electricals Limited (BHEL)",
-            date: "05/2024 - 06/2024",
-            location: "India",
-            type: "Manufacturing / Core",
-            description: [
-                "Developed a PIN Code Validator Android Application using Kotlin and Jetpack Compose, integrating real-time validation features.",
-                "Applied modern Android development practices including declarative UI with Jetpack Compose and clean architecture principles.",
-                "Gained exposure to industry workflow, software development lifecycle (SDLC), and project documentation within a large-scale organization."
-            ]
-        },
-        {
-            title: "AIML Internship",
-            company: "Internpe",
-            date: "06/2024",
-            location: "Online",
-            type: "Startup company",
-            description: [
-                "Specialized in training machine learning models and optimizing algorithms to enhance model accuracy, reduce computational cost, and improve overall system performance.",
-                "Experienced in developing and deploying deep learning models using TensorFlow and PyTorch for complex classification and regression tasks, including data preprocessing, model training, evaluation, and optimization."
-            ]
-        }
-    ];
 
     return (
         <section id="experience" className="py-20">
@@ -46,10 +57,12 @@ const Experience = () => {
                                 <h4 className="text-lg text-cyan-400 font-medium">{exp.company}</h4>
                             </div>
                             <div className="flex flex-col gap-2 text-sm text-slate-400">
-                                <div className="flex items-center gap-2">
-                                    <Calendar size={14} />
-                                    {exp.date}
-                                </div>
+                                {exp.date && (
+                                    <div className="flex items-center gap-2">
+                                        <Calendar size={14} />
+                                        {exp.date}
+                                    </div>
+                                )}
                                 <div className="flex items-center gap-2">
                                     <MapPin size={14} />
                                     {exp.location}

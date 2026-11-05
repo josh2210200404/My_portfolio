@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, MapPin } from 'lucide-react';
+import { ArrowRight, FileText, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -36,10 +36,10 @@ const Hero = () => {
                             Contact Me <ArrowRight size={18} />
                         </a>
                         <a
-                            href="#" // Placeholder for resume
+                            href="/resume"
                             className="px-8 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium rounded-full transition-all flex items-center gap-2"
                         >
-                            Download Resume <Download size={18} />
+                            View Resume <FileText size={18} />
                         </a>
                     </div>
 
