@@ -54,7 +54,7 @@ const Contact = () => {
                         <Linkedin size={24} />
                     </a>
                     <a
-                        href="https://github.com"
+                        href="https://github.com/josh2210200404"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-all"

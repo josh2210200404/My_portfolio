@@ -63,3 +63,7 @@ html {
   box-shadow: 0 10px 40px -10px rgba(34, 211, 238, 0.2);
   border-color: rgba(34, 211, 238, 0.3);
 }
+@media print {
+  @page { margin: 14mm; }
+  body { background: #fff; }
+}

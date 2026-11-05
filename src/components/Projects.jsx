@@ -1,56 +1,57 @@
 import React from 'react';
 import { FolderGit2, Calendar, MapPin, ExternalLink } from 'lucide-react';
 
+export const projects = [
+    {
+        title: "Automated Marine Oil Spill Detection",
+        date: "03/2023 - 06/2023",
+        location: "India",
+        description: "Automated Marine Oil Spill Detection Using AIS Dataset and Satellite Images",
+        points: [
+            "Developed an AI model to detect ship movement anomalies and predict potential oil spills using AIS and satellite data.",
+            "Applied anomaly detection algorithms with Python for maritime safety analysis."
+        ],
+        tags: ["Python", "AI/ML", "Satellite Data"]
+    },
+    {
+        title: "AI-Powered Job Matching Platform",
+        date: "05/2023 - 08/2023",
+        location: "India",
+        description: "AI-Powered Job Matching Platform",
+        points: [
+            "Created an intelligent job search website integrating AI chatbot support for personalized guidance.",
+            "Implemented frontend with React and backend using Node.js for dynamic user interaction."
+        ],
+        tags: ["React", "Node.js", "AI Chatbot"],
+        link: "https://github.com/PremSaiBollamoni/CenSkillConnect"
+    },
+    {
+        title: "Weather Forecast App",
+        date: "2024",
+        location: "Online",
+        description: "Flutter-based cross-platform weather application",
+        points: [
+            "Developed a cross-platform app showing real-time weather and 5-day forecasts with dynamic backgrounds based on conditions.",
+            "Implemented fast city search with autocomplete and detailed weather metrics using WeatherAPI.com and MobX for state management.",
+            "Designed a modern, responsive UI supporting light/dark themes for mobile, web, and desktop platforms."
+        ],
+        tags: ["Flutter", "Dart", "MobX", "WeatherAPI"],
+        link: "https://github.com/josh2210200404/Figma-Weather-app-layout"
+    },
+    {
+        title: "Intelligent Video Surveillance System",
+        date: "09/2023 - 12/2023",
+        location: "India",
+        description: "Intelligent Video Surveillance System",
+        points: [
+            "Developed an AI-driven real-time video surveillance application for automated detection of violence, theft, and abnormal activities.",
+            "Engineered and deployed deep learning models using TensorFlow and OpenCV for live video analytics and intelligent event recognition."
+        ],
+        tags: ["TensorFlow", "OpenCV", "Deep Learning"]
+    }
+];
+
 const Projects = () => {
-    const projects = [
-        {
-            title: "Automated Marine Oil Spill Detection",
-            date: "03/2023 - 06/2023",
-            location: "India",
-            description: "Automated Marine Oil Spill Detection Using AIS Dataset and Satellite Images",
-            points: [
-                "Developed an AI model to detect ship movement anomalies and predict potential oil spills using AIS and satellite data.",
-                "Applied anomaly detection algorithms with Python for maritime safety analysis."
-            ],
-            tags: ["Python", "AI/ML", "Satellite Data"]
-        },
-        {
-            title: "AI-Powered Job Matching Platform",
-            date: "05/2023 - 08/2023",
-            location: "India",
-            description: "AI-Powered Job Matching Platform",
-            points: [
-                "Created an intelligent job search website integrating AI chatbot support for personalized guidance.",
-                "Implemented frontend with React and backend using Node.js for dynamic user interaction."
-            ],
-            tags: ["React", "Node.js", "AI Chatbot"],
-            link: "https://github.com/PremSaiBollamoni/CenSkillConnect"
-        },
-        {
-            title: "Weather Forecast App",
-            date: "2024",
-            location: "Online",
-            description: "Flutter-based cross-platform weather application",
-            points: [
-                "Developed a cross-platform app showing real-time weather and 5-day forecasts with dynamic backgrounds based on conditions.",
-                "Implemented fast city search with autocomplete and detailed weather metrics using WeatherAPI.com and MobX for state management.",
-                "Designed a modern, responsive UI supporting light/dark themes for mobile, web, and desktop platforms."
-            ],
-            tags: ["Flutter", "Dart", "MobX", "WeatherAPI"],
-            link: "https://github.com/josh2210200404/Figma-Weather-app-layout"
-        },
-        {
-            title: "Intelligent Video Surveillance System",
-            date: "09/2023 - 12/2023",
-            location: "India",
-            description: "Intelligent Video Surveillance System",
-            points: [
-                "Developed an AI-driven real-time video surveillance application for automated detection of violence, theft, and abnormal activities.",
-                "Engineered and deployed deep learning models using TensorFlow and OpenCV for live video analytics and intelligent event recognition."
-            ],
-            tags: ["TensorFlow", "OpenCV", "Deep Learning"]
-        }
-    ];
 
     return (
         <section id="projects" className="py-20">

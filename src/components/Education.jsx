@@ -1,27 +1,28 @@
 import React from 'react';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
+export const education = [
+    {
+        degree: "B.Tech. - Computer Science & Engineering",
+        school: "Centurion University of Technology and Management",
+        date: "08/2022 - 05/2026",
+        location: "Vishakhapatnam, Andhra Pradesh, India"
+    },
+    {
+        degree: "12th",
+        school: "Narayana Junior College, Visakhapatnam",
+        date: "06/2020 - 05/2022",
+        location: "Visakhapatnam, Andhra Pradesh, India"
+    },
+    {
+        degree: "10th",
+        school: "Narayana Group of Schools, Visakhapatnam",
+        date: "06/2019 - 05/2020",
+        location: "Visakhapatnam, Andhra Pradesh, India"
+    }
+];
+
 const Education = () => {
-    const education = [
-        {
-            degree: "B.Tech. - Computer Science & Engineering",
-            school: "Centurion University of Technology and Management",
-            date: "08/2022 - 05/2026",
-            location: "Vishakhapatnam, Andhra Pradesh, India"
-        },
-        {
-            degree: "12th",
-            school: "Narayana Junior College, Visakhapatnam",
-            date: "06/2020 - 05/2022",
-            location: "Visakhapatnam, Andhra Pradesh, India"
-        },
-        {
-            degree: "10th",
-            school: "Narayana Group of Schools, Visakhapatnam",
-            date: "06/2019 - 05/2020",
-            location: "Visakhapatnam, Andhra Pradesh, India"
-        }
-    ];
 
     return (
         <section id="education" className="py-20">
